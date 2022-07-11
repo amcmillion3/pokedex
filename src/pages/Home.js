@@ -18,8 +18,8 @@ function Home() {
 
   const search = (term) =>
     setPokemons(
-      pokeData.filter((d) =>
-        d.name.toLowerCase().includes(term.toLowerCase())
+      pokeData.filter((letter) =>
+        letter.name.toLowerCase().includes(term.toLowerCase())
       )
     );
 
