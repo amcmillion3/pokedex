@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# McMillion Pokédex
+## Description
+### What is The McMillion Pokédex?
+A small app that displays pokémon. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Why did I build this project?
+I wanted to build a project that consumes an API and uses the data to create the UI. I grew up playing Pokémon so I thought this would be a more enjoyable API project to build than just a simple weather app.
 
-## Available Scripts
+### My Learning Experience
+The most important than for this project was fetching and processing the data. I had issues getting the data fetching to work at first mostly because the useEffect React Hook is calling twice upon mounting and at first it was creating an empty array. I solved the problem by setting an initial empty array. The other main pain point I had was building the search function. It was straight forward to get it to search but I was stuck for a little bit with how to get the other pokémon to return when letters were deleted from the search input. I fixed this by using state to create an array of all the pokémon when the data is fetched and never altering the array so I always have all the data to reset the searched data. I enjoyed building it and seeing some of the old pokémon I haven't seen or thought about in a while brought back nice memories from years past. 
 
-In the project directory, you can run:
+## Demo
+![Demo](./src/assets/pokedex.gif)
 
-### `npm start`
+### Built with
+- React
+- Tailwind
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Run Locally
+- Clone this Repo
+- Run `npm install` and `npm run start` to start the dev environment
+- The application runs in `http://localhost:3000/`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Future Features
+- When you click on a pokémon I want a details page to come up that contains a bunch of info about the pokemon. 
+- I want to add color to the cards based on what type the pokémon is.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Acknowledgments
+- Poke API for providing the data
+- Pokémon for all the childhood memories.
